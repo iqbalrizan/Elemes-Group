@@ -68,3 +68,16 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+1. install project dengan perintah "npx create-react-app elemes-group" di gitbash
+2. masuk ke visual studio code dan masuk ke folder "elemes-group"
+3. install beberapa dependencies yang dibutuhkan seperti "react bootstrap", "react-slick", "SASS", "react-icons"
+4. setelah menyelesaikan project, install git dengan perintah "git init"
+5. lalu lakukan commit dengan perintah "git add ." dan "git commit -m "initial project" "
+6. lalu koneksikan ke repository yang telah dibuat di github "git remote add origin git@github.com:iqbalrizan/Elemes-Group.git"
+7. dan setelah itu save commit dengan perintah "git push origin master"
+8. setelah berhasil disimpan di repository, berikutnya adalah proses deployment dengan web hosting vercell
+9. masuk ke "www.vercell.com", lalu pilih dashboard, lalu pilih repository yang ingin di deploy
+10. setelah itu klik "deploy"

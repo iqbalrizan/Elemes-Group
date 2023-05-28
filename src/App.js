@@ -1,23 +1,44 @@
-import logo from './logo.svg';
+import { useState, useEffect } from 'react';
+import { Alert } from 'react-bootstrap';
 import './App.css';
+import Navbar from './components/Navbar/Navbar';
+import HeroSectionMobile from './components/HeroSection/HeroSectionMobile';
+import Category from './components/Category/Category';
+import Trending from "./components/Trending/Trending"
+import HeroSection from './components/HeroSection/HeroSectionDesktop';
+import HeroSectionDesktop from './components/HeroSection/HeroSectionDesktop';
+import StickyMenu from './components/StickyMenu/StickyMenu';
+import Footer from "./components/Footer/Footer"
+
+
 
 function App() {
+  const [width, setWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    function handleResize() {
+      setWidth(window.innerWidth);
+    }
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      {window.innerWidth < 600 ? <HeroSectionMobile /> : <HeroSectionDesktop/>}
+      
+      <Category />
+      <Trending />
+      {window.innerWidth < 600 ? <StickyMenu /> : <Footer />}
+
+     <div className="content">
+        <p>© 2021 Elemes id. All rights reserved</p>
+        <br />
+        
+      </div> 
+     
     </div>
   );
 }

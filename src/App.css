@@ -36,3 +36,23 @@
     transform: rotate(360deg);
   }
 }
+
+.App .content {
+  display: flex;
+  justify-content: center;
+font-family: Rubik;
+font-size: 12px;
+font-weight: 400;
+line-height: 16px;
+letter-spacing: 0.05em;
+text-align: left;
+padding: 30px 0;
+color: #757575;
+
+
+}
+@media screen and (max-width:600px) {
+  .App .content {
+    display: none !important;
+  }
+}

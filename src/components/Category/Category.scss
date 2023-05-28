@@ -1,0 +1,156 @@
+.category {
+    padding: 20px 50px;
+
+    .title {
+      margin: 30px 0;
+      h1 {
+        font-family: Rubik;
+        font-size: 38px;
+        font-weight: 500;
+        line-height: 50px;
+        letter-spacing: 0em;
+        text-align: left;
+
+      }
+      h2 {
+        font-family: Rubik;
+        font-size: 38px;
+        font-weight: 500;
+        line-height: 50px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #8BAC3E;
+      }
+    }
+
+
+    .carrousel {
+       
+
+        .slick-prev,
+.slick-next {
+  background-color: #ff0000; /* Ubah dengan warna yang diinginkan */
+  color: #ffffff; /* Ubah dengan warna yang diinginkan */
+}
+
+.slick-center {
+  -webkit-transform: scale(1.20);
+  -moz-transform: scale(1.20);
+  transform: scale(1.20);
+}
+.slick-prev {
+    position: absolute;
+    top: 50%;
+    left: 200px;
+    transform: translateY(-50%);
+  }
+  
+  .slick-next {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+  }
+
+ 
+
+  .slickcard{
+    height: 170px;
+    width: 230px !important;
+    background-color: aqua;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 10px;
+    cursor: pointer;
+
+
+    .cardname {
+     
+font-family: Rubik;
+font-size: 16px;
+font-weight: 500;
+line-height: 22px;
+letter-spacing: 0em;
+text-align: center;
+
+    }
+    .cardvalue {
+      //styleName: Text/Text-Default;
+font-family: Rubik;
+font-size: 14px;
+font-weight: 400;
+line-height: 16px;
+letter-spacing: 0em;
+text-align: center;
+
+    }
+    .slickimage {
+      height: 50px;
+      width: 50px;
+      display: inline-block;
+    }
+  }
+  .color1 {
+    background-color: #F0FEEB;
+  }
+  .color2 {
+    background-color: #E4F2F4;
+  }
+  .color3 {
+    background-color: #EAEEFA;
+  }
+  .color4 {
+    background-color: #F9EEF3;
+  }
+  .color5 {
+    background-color: #F3F7D9;
+  }
+  .slickcard:hover {
+    background-image: url('../../assets/115\ 1.png');
+    opacity: 0.5;
+    background-size: cover;
+    -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.4);
+  }
+
+  .buttoncategory {
+    margin: 50px 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+
+    .prevbutton, .nextbutton {
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      border-radius: 100px;
+    }
+    .categoryicon{
+      border-radius: 50%;
+      background-color: white;
+      padding: 5px;
+      color: #8BAC3E;
+    }
+    button {
+      border: none;
+      outline: none;
+      background-color: #8BAC3E;
+      color: white;
+    }
+  }
+    }
+}
+
+@media screen and (max-width:600px) {
+  .buttoncategory {
+    display: none !important;
+  }
+  .slickcard {
+    width: 180px !important;
+  }
+}

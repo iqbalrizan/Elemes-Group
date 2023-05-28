@@ -1,0 +1,119 @@
+.navigationbar {
+    padding: 30px 50px;
+    display: flex;
+    align-items: center;
+    height: 15vh;
+    .logo {
+        width: 25%;
+        
+       
+    }
+    .menu {
+        width: 50%;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+        ul {
+            text-decoration: none;
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 13px;
+            li {
+                color:#757575;
+                
+                //styleName: Heading/H7-Xxsmall;
+                font-family: Rubik;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 22px;
+                letter-spacing: 0em;
+                text-align: left;
+
+                a{
+                    .wrapper {
+                        position: relative;
+                        .hot {
+                            position: absolute;
+                            top: -22px;
+                            color: rgb(255, 255, 255);
+                            background-color:#E7462D;
+                            height: 19px;
+                            width: 36px;
+                            border-radius: 10px;
+                            right: -13px;
+                            font-size: 8px;
+                            // padding: 0 10px;
+                            text-align: center;
+                        }
+                    }
+                   
+                }
+                
+            }
+            li:hover {
+              color: #8BAC3E;
+               
+                // color: white;
+            }
+        }
+    }
+    .signin {
+        width: 25%;
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+        .button1 {
+            background-color: white;
+            border: none;
+            color: black;
+            font-size: 14px;
+            font-weight: 500;
+        }
+       
+        .button2 {
+            background-color: #8BAC3E;
+            color: white;
+            padding: 10px 18px;
+            border-radius: 20px;
+            border: none;
+        }
+    }
+}
+
+@media screen and (max-width:1000px) {
+    ul {
+        gap: 10px !important;
+    }
+}
+@media screen and (max-width:850px) {
+    .menu {
+        display: none !important;
+    }
+    .logo {
+        width: 50% !important;
+    }
+    .signin {
+        width: 50% !important;
+    }
+}
+
+@media screen and (max-width:500px) {
+
+    .navigationbar {
+        display: flex !important;
+        justify-content: space-between !important;
+        padding: 0 10px !important;
+    }
+    .menu {
+        display: none !important;
+    }
+    .signin {
+        .button1 {
+            display: none !important;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+.stickymenu {
+    height: 10vh;
+    position: sticky;
+    bottom: 0;
+    background-color: rgb(255, 255, 255);
+    z-index: 626;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    .home {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+    }
+    .promotions {
+        cursor: pointer;
+    }
+    .others {
+        cursor: pointer;
+    }
+}
